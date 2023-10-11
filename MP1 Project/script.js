@@ -5,7 +5,6 @@ minmax.addEventListener('click', setBoundaries);
 makeguess.addEventListener('click', guess);
 var min = 0;
 var max = 0;
-var guess = 0;
 var answer = 0;
 var range = 0;
 function setBoundaries()
@@ -33,11 +32,11 @@ function setBoundaries()
 function guess()
 {
     const inputguess = prompt("Put in your guess.");
-    if (guess == answer)
+    if (inputguess == answer)
     {
-        temp.textContent = "YOU WIN"
+        temp.textContent = "YOU WIN";
     }
-    if(Math.abs((inputguess-answer)) <= (0.02*range))
+    else if(Math.abs((inputguess-answer)) <= (0.02*range))
     {
         temp.textContent = "Status: Boiling";
     }
@@ -65,9 +64,9 @@ function guess()
     {
         temp.textContent = "Status: Freezing";
     }
-    if((guess < min) || (guess > max))
+    if((inputguess < min) || (inputguess > max))
     {
-        temp.textContent = "Status; Invalid"
+        temp.textContent = "Status: Invalid";
     }
 }
 
