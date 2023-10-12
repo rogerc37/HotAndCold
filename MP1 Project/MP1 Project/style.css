@@ -1,0 +1,36 @@
+h1
+{
+    font-size: 60px;
+    text-align: center;
+    font-family: monospace;
+}
+#minmax{
+    background-color: #8e1eff;
+    border: 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    font-size: 45px;
+    font-family: monospace;
+    cursor: pointer;
+
+}
+#makeguess{
+    background-color: #8e1eff;
+    border: 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    font-size: 45px;
+    font-family: monospace;
+    cursor: pointer;
+}
+#temp{
+    background-color: #8e1eff;
+    border: 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    font-size: 45px;
+    font-family: monospace;
+}
